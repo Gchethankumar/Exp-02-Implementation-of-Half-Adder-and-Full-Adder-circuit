@@ -45,6 +45,16 @@ Logic symbol & Truthtable
 RTL realization
 
 ### Output:
+
+Half adder:
+
+![DE_exp02](https://user-images.githubusercontent.com/118348224/209704385-5a5f9415-4208-463c-be8c-7116ac4a322f.png)
+
+Full adder:
+
+![DE_exp03](https://user-images.githubusercontent.com/118348224/209704555-a25531dd-ed2e-47fa-a22f-fcf435fb4770.png)
+
+
 ### RTL
 ### TIMING DIAGRAM
 
