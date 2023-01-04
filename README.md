@@ -10,12 +10,12 @@ Software – Quartus prime
 Theory
 Adders are digital circuits that carry out addition of numbers.
 
-### Half Adder
+### HALF ADDER
 Half adder is a combinational circuit that performs simple addition of two binary numbers. The input variables designate the augend and addend bits; the output variables produce the sum and carry. It is necessary to specify two output variables because the result may consist of two binary digits.
 
 Sum = A’B+AB’ =A ⊕ B Carry = AB
 
-### Full Adder
+### FULL ADDER
 Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
 
 Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = AB + ACin + BCin
@@ -37,11 +37,12 @@ If the output is 1, then the led glows.
 ### 
 Program:
 ```
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Program to design a half adder and full adder circuit and verify its truth table in quartus using 
+Verilog programming.
 Developed by: G Chethan kumar
 RegisterNumber: 22005596
 
-Half adder program:
+HALF ADDER program:
 
 module experimentthree(a,b,sum,carry);
 input a,b;
@@ -50,7 +51,7 @@ xor(sum,a,b);
 and(carry,a,b);
 endmodule
 
-Full adder program:
+FULL ADDER program:
 
 module experimenttwo(a,b,c,sum,carry);
 input a,b,c;
@@ -61,34 +62,33 @@ endmodule
 ```
 ### Output:
 Logic symbol & Truthtable
-### RTL realization:
 
-Half adder:
-![DE_exp02](https://user-images.githubusercontent.com/118348224/210095676-86427dc8-e9fc-4a75-b367-03533b7c5963.png)
+### TRUTH TABLE:
+HALF ADDER:
 
-Full adder:
-![DE_exp002](https://user-images.githubusercontent.com/118348224/210096057-29d39ab2-ad0f-4064-9570-391e087dd7bc.png)
+![Screenshot_20230104_091652](https://user-images.githubusercontent.com/118348224/210482076-b3893768-c4b3-447d-a058-d286fc81de7a.png)
 
+
+FULL ADDER:
+
+![Screenshot_20230104_092852](https://user-images.githubusercontent.com/118348224/210482104-06e96790-fccb-46dc-b832-0154f20603d1.png)
 
 
 ### TIMING DIAGRAM:
-Half adder:
+HALF ADDER:
 
 ![halfadder2](https://user-images.githubusercontent.com/118348224/210093482-00ca17a0-aed9-4118-8052-220e6ca63b8b.jpg)
 
-Full adder:
+FULL ADDER:
 
 ![fulladder1](https://user-images.githubusercontent.com/118348224/210093509-3d9b8514-735a-4213-bc10-ad70d9c40750.jpg)
 
-### TRUTH TABLE:
-Half adder:
+### RTL realization:
+HALF ADDER:
+![DE_exp02](https://user-images.githubusercontent.com/118348224/210095676-86427dc8-e9fc-4a75-b367-03533b7c5963.png)
 
-![half-adder2](https://user-images.githubusercontent.com/118348224/210093851-86891014-2758-41a9-b485-33acb93f0a79.png)
-
-Full adder:
-
-![full-adder2](https://user-images.githubusercontent.com/118348224/210093903-8960dad6-fa1b-48d9-9a40-56cefcd79da5.png)
-
+FULL ADDER:
+![DE_exp002](https://user-images.githubusercontent.com/118348224/210096057-29d39ab2-ad0f-4064-9570-391e087dd7bc.png)
 
 ### Result:
 Thus, the different digital IC's are studied and the truth table for different logic gates are verified.
