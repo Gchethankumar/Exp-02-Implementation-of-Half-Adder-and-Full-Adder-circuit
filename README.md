@@ -92,7 +92,8 @@ TIMING DIAGRAM:
 
 
 TRUTH TABLE:
-![Screenshot_20230104_092852](https://user-images.githubusercontent.com/118348224/210482104-06e96790-fccb-46dc-b832-0154f20603d1.png)
+
+![Screenshot_20230105_094051](https://user-images.githubusercontent.com/118348224/210827254-afe3fe86-87f6-4175-934c-80fcf2357347.png)
 
 
 ### Result:
