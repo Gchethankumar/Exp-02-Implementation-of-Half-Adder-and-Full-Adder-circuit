@@ -29,66 +29,71 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure
+### PROCEDURE:
 
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-```
+
+### PROGRAM:
+
 Program to design a half adder and full adder circuit and verify its truth table in quartus using 
 Verilog programming.
 Developed by: G Chethan kumar
 RegisterNumber: 22005596
 
-HALF ADDER program:
-
-module experimentthree(a,b,sum,carry);
+HALF ADDER:
+```
+module add(a,b,sum,carry);
 input a,b;
 output sum,carry;
 xor(sum,a,b);
 and(carry,a,b);
 endmodule
-
-FULL ADDER program:
-
-module experimenttwo(a,b,c,sum,carry);
+```
+FULL ADDER:
+```
+module fulladd(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum = ((a^b)^c);
 assign carry = ((a&b)|(b&c)|(c&a));
 endmodule
 ```
-### Output:
-Logic symbol & Truthtable
+### OUTPUT:
 
-### TRUTH TABLE:
-HALF ADDER:
+#### HALF ADDER:
+
+RTL realization:
+
+![DE_exp02](https://user-images.githubusercontent.com/118348224/210095676-86427dc8-e9fc-4a75-b367-03533b7c5963.png)
+
+
+TIMING DIAGRAM:
+
+![Screenshot_20230105_090251](https://user-images.githubusercontent.com/118348224/210821517-bbbcf53c-26b5-4851-9617-226c8920d4e5.png)
+
+
+TRUTH TABLE:
 
 ![Screenshot_20230104_091652](https://user-images.githubusercontent.com/118348224/210482076-b3893768-c4b3-447d-a058-d286fc81de7a.png)
 
+#### FULL ADDER:
 
-FULL ADDER:
+RTL realization:
 
+![DE_exp002](https://user-images.githubusercontent.com/118348224/210096057-29d39ab2-ad0f-4064-9570-391e087dd7bc.png)
+
+
+TIMING DIAGRAM:
+
+![Screenshot_20230105_091234](https://user-images.githubusercontent.com/118348224/210821587-5072a876-5764-436f-b97d-1687fa229561.png)
+
+
+
+TRUTH TABLE:
 ![Screenshot_20230104_092852](https://user-images.githubusercontent.com/118348224/210482104-06e96790-fccb-46dc-b832-0154f20603d1.png)
 
 
-### TIMING DIAGRAM:
-HALF ADDER:
-
-![halfadder2](https://user-images.githubusercontent.com/118348224/210093482-00ca17a0-aed9-4118-8052-220e6ca63b8b.jpg)
-
-FULL ADDER:
-
-![fulladder1](https://user-images.githubusercontent.com/118348224/210093509-3d9b8514-735a-4213-bc10-ad70d9c40750.jpg)
-
-### RTL realization:
-HALF ADDER:
-![DE_exp02](https://user-images.githubusercontent.com/118348224/210095676-86427dc8-e9fc-4a75-b367-03533b7c5963.png)
-
-FULL ADDER:
-![DE_exp002](https://user-images.githubusercontent.com/118348224/210096057-29d39ab2-ad0f-4064-9570-391e087dd7bc.png)
-
 ### Result:
-Thus, the different digital IC's are studied and the truth table for different logic gates are verified.
+Thus, a half adder and full adder circuit is designed to verify its truth table in Quartus using Verilog programming.
